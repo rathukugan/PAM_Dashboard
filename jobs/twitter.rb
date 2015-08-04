@@ -13,6 +13,7 @@ end
 
 #Send a randomized tweet every 2minutes from @RBCsPAM
 #Simulates the auto generated messages from PAM
+=begin
 SCHEDULER.every '2m' do
     milestone = Random.new.rand(1..10)
     projects = ["Automated DSA", "GEMA Team Portal"]
@@ -30,6 +31,7 @@ SCHEDULER.every '2m' do
         twitter.update(msg3)
     end
 end
+=end
 
 SCHEDULER.every '30s', :first_in => 0 do |job|
   begin
