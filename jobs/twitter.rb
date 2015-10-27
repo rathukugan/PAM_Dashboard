@@ -33,7 +33,7 @@ SCHEDULER.every '2m' do
 end
 =end
 
-SCHEDULER.every '30s', :first_in => 0 do |job|
+SCHEDULER.every '45s', :first_in => 0 do |job|
   begin
     #tweets = twitter.search("#{search_term}")
     #tweets = twitter.user_timeline("EnterUserNameHere")
